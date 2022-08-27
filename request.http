@@ -10,7 +10,7 @@ Content-Type: application/json
 ###
 
 # User login
-POST http://localhost:5000/api/auth/login
+POST https://aqueous-waters-32935.herokuapp.com/api/auth/login
 Content-Type: application/json
 
 {
@@ -35,7 +35,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzA4Y
 ###
 
 #Get posts
-GET http://localhost:5000/api/posts
+GET https://aqueous-waters-32935.herokuapp.com/api/posts
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzA4YWYwMTY4Y2RmNjcwNjE0MTI1NDQiLCJpYXQiOjE2NjE1Nzc5NjZ9.IsNHoSNXaHqtsEsHtwah6FCTMxNI-wQ7mmZwlHQ8-hc
 
 ###

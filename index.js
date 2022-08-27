@@ -7,7 +7,9 @@ const postRouter = require('./routes/post');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://127.0.0.1/mern_stack');
+        await mongoose.connect(
+            'mongodb+srv://quangson1901:plmmlp98@mern-learnit.gp48stt.mongodb.net/mern-learnit?retryWrites=true&w=majority',
+        );
 
         console.log('MongoDB Connected');
     } catch (error) {
