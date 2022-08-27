@@ -1,0 +1,59 @@
+# User register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "jim",
+    "password": "jim"
+}
+
+###
+
+# User login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "jim",
+    "password": "jim"
+}
+
+###
+
+# Create post
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzA4YWYwMTY4Y2RmNjcwNjE0MTI1NDQiLCJpYXQiOjE2NjE1Nzc5NjZ9.IsNHoSNXaHqtsEsHtwah6FCTMxNI-wQ7mmZwlHQ8-hc
+
+{
+    "title": "MongoDB",
+    "description": "MongoDB",
+    "url": "mongo.com",
+    "status": "TO LEARN"
+}
+
+###
+
+#Get posts
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzA4YWYwMTY4Y2RmNjcwNjE0MTI1NDQiLCJpYXQiOjE2NjE1Nzc5NjZ9.IsNHoSNXaHqtsEsHtwah6FCTMxNI-wQ7mmZwlHQ8-hc
+
+###
+
+#Update posts
+PUT http://localhost:5000/api/posts/6308aec0ecd494af6f21798e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzA4YTA5NTYxNGM0NWQzNjJkNmQxYjQiLCJpYXQiOjE2NjE1MTM3MjN9.Mf3cBCdri1yQUrILPtMgAfdqpfd1RMjeb-LUQd7Yayo
+
+{
+    "title": "Vue",
+    "description": "VueJS",
+    "url": "https://vue.org",
+    "status": "LEARNING"
+}
+
+###
+
+#Delete posts
+DELETE  http://localhost:5000/api/posts/6308aec0ecd494af6f21798e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzA4YTA5NTYxNGM0NWQzNjJkNmQxYjQiLCJpYXQiOjE2NjE1MTM3MjN9.Mf3cBCdri1yQUrILPtMgAfdqpfd1RMjeb-LUQd7Yayo
